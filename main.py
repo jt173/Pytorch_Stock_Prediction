@@ -42,8 +42,6 @@ def main():
     scheduler = lr_scheduler.StepLR(optimizer, step_size=1, gamma=1.0)
 
     criterion = nn.MSELoss()
-    #criterion = nn.SmoothL1Loss()
-
 
     # Train
     for i in range(max_epochs):
