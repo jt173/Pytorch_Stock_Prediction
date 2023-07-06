@@ -257,7 +257,7 @@ def main():
     decoder_optim = torch.optim.Adam(decoder.parameters(), lr=0.001)
     criterion = nn.MSELoss()
 
-    num_epochs = 1
+    num_epochs = 200
     print('Training Started...')
     for epoch in range(num_epochs):
         train_loss = train_once(encoder, decoder, train_loader, encoder_optim, decoder_optim, criterion)
